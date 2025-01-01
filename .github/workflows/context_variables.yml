@@ -1,0 +1,9 @@
+name: Context Variables
+on:
+ workflow_dispatch:
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - name: task
+     run: echo Details - ${{github.action_path}} , ${{github.actor_id}} - ${{github.actor}}
