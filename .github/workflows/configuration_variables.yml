@@ -1,0 +1,11 @@
+name: Configuration Variables
+on:
+ workflow_dispatch:
+env:
+ greet: Hello
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+   - name: config
+     run: echo "$greet , Nirzara has hobbies -  ${{vars.hobbies}}"
