@@ -16,4 +16,4 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: task
-     run: echo Addition of two numbers $number1 and $number2 is $number1+$number2
+     run: echo Addition of two numbers ${{number1}} and ${{number2}} is ${{number1}}+${{number2}}
