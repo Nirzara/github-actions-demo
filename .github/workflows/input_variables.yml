@@ -3,13 +3,13 @@ on:
  workflow_dispatch:
   inputs:
    number1:
-    description: First Number
+     description: First Number
+     default: 0
+     required: true
+   number2:
+    description: Second Number
     default: 0
     required: true
-   number2:
-   description: Second Number
-   default: 0
-   required: true
    
 jobs:
  add_numbers:
