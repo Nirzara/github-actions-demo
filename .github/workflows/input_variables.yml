@@ -4,11 +4,11 @@ on:
   inputs:
    number1:
      description: First Number
-     default: 0
+     default: '0'
      required: true
    number2:
     description: Second Number
-    default: 0
+    default: '0'
     required: true
    
 jobs:
@@ -16,4 +16,4 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: task
-     run: echo Addition of two numbers ${{number1}} and ${{number2}} is ${{number1}}+${{number2}}
+     run: echo Addition of two numbers ${{inputs.number1}} and ${{inputs.number2}} is sum::((${{inputs.number1}}+${{inputs.number2}}))
