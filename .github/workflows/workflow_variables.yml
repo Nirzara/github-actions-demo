@@ -1,0 +1,17 @@
+name: Worklow Variables 
+
+on:
+ workflow_dispatch:
+
+env:
+ topic: GitHub Actions
+jobs:
+ example:
+  env: 
+   name: Nirzara
+   greeting: Hello
+  runs-on: ubuntu-latest
+  steps:
+   - name: Task
+     run: echo $greeting, $name is learning $topic !!
+ 
